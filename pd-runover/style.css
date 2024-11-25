@@ -1,0 +1,13 @@
+* {
+    box-sizing: border-box;
+}
+form {
+    width: 600px;
+    margin: auto;
+}
+input {
+    width: 600px;
+}
+label{
+    display: block;
+}

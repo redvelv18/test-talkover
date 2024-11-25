@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mia</title>
+</head>
+
+<body>
+    <div class="calculus">
+
+        <input type="number" id="num1" />
+        <input type="text" id="plusmin" />
+        <input type="number" id="num2" />
+        <button type="submit" id="btn">Rēķināt</button>
+        <p id="output"></p>
+
+    </div>
+    <script>
+        let num1Input = document.getElementById("num1");
+        let plusminInp = document.getElementById("plusmin");
+        let num2Input = document.getElementById("num2");
+        let buttonSub = document.getElementById("btn");
+        let output = document.getElementById("output");
+
+        btn.addEventListener("click", processClick)
+
+        function processClick() {
+            let num1 = parseInt(num1Input.value);
+            let num2 = parseInt(num2Input.value);
+            let op = plusminInp.value;
+
+            output.innerHTML = calculate(num1, num2, plusmin);
+        }
+
+        function calculate(n1, n2, op) {
+            if (op == "+") {
+                return `Rezultāts: ${num1 + num2}`;
+            }
+        }
+    </script>
+</body>
+
+</html>
